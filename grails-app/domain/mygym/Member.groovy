@@ -14,12 +14,6 @@ class Member {
 	String	cumpleanos
 	Rutina rutina
 
-	
-	
-
-
-
-
 	static constraints = {
 
 		noSocio()
