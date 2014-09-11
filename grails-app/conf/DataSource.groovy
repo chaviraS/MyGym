@@ -3,6 +3,7 @@ dataSource {
     driverClassName = "com.mysql.jdbc.Driver"
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 	username = "root"
+        password = "am"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -13,7 +14,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "create" // one of 'create', 'create-drop','update'
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
             url = "jdbc:mysql://localhost/gym?useUnicode=yes&characterEncoding=UTF-8"
             
         }

@@ -92,8 +92,6 @@
 
 </div>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: memberInstance, field: 'pagos', 'error')} ">
 	<label for="pagos">
 		<g:message code="member.pagos.label" default="Pagos" />
@@ -111,6 +109,4 @@
 
 
 </div>
-
-
 

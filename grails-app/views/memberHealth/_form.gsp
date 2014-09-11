@@ -79,7 +79,7 @@
 		<g:message code="memberHealth.member.label" default="Member" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="member" name="member.id" from="${mygym.Member.list()}" optionKey="id"  optionValue="apellidoP" value="${memberHealthInstance?.member?.id}" class="many-to-one"/>
+	<g:select id="member" name="member.id" from="${mygym.Member.list()}" optionKey="id" required="" value="${memberHealthInstance?.member?.id}" class="many-to-one"/>
 
 </div>
 

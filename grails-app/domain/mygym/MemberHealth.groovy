@@ -14,7 +14,8 @@ class MemberHealth {
 	String enfermedades
 	String medicado
 	String contactoEmergencia  
-	Member member
+        
+    static belongsTo = [member: Member ]
 	
 	
 	

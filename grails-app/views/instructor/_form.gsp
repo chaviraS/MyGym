@@ -38,5 +38,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: instructorInstance, field: 'members', 'error')} ">
+	<label for="members">
+		<g:message code="instructor.members.label" default="Members" />
+		
+	</label>
+	<g:select name="members" from="${mygym.Member.list()}" multiple="multiple" optionKey="id" size="5" value="${instructorInstance?.members*.id}" class="many-to-many"/>
 
+</div>
 

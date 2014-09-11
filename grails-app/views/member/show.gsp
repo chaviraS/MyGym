@@ -113,15 +113,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${memberInstance?.health}">
-				<li class="fieldcontain">
-					<span id="health-label" class="property-label"><g:message code="member.health.label" default="Health" /></span>
-					
-						<span class="property-value" aria-labelledby="health-label"><g:link controller="memberHealth" action="show" id="${memberInstance?.health?.id}">${memberInstance?.health?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${memberInstance?.pagos}">
 				<li class="fieldcontain">
 					<span id="pagos-label" class="property-label"><g:message code="member.pagos.label" default="Pagos" /></span>
@@ -129,15 +120,6 @@
 						<g:each in="${memberInstance.pagos}" var="p">
 						<span class="property-value" aria-labelledby="pagos-label"><g:link controller="pagos" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${memberInstance?.rutina}">
-				<li class="fieldcontain">
-					<span id="rutina-label" class="property-label"><g:message code="member.rutina.label" default="Rutina" /></span>
-					
-						<span class="property-value" aria-labelledby="rutina-label"><g:link controller="rutina" action="show" id="${memberInstance?.rutina?.id}">${memberInstance?.rutina?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

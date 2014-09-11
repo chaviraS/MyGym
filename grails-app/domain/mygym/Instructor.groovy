@@ -19,7 +19,7 @@ class Instructor {
 	
 	
 	
-//	static hasMany = [member: Member]
+    static hasMany = [members: Member]
 	
 	
 	

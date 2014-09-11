@@ -12,7 +12,7 @@ class Member {
 	String	direccion
 	String	email
 	String	cumpleanos
-	Rutina rutina
+	
 
 	static constraints = {
 
@@ -28,7 +28,8 @@ class Member {
 		cumpleanos()
 	}
 
-	static hasOne = [health: MemberHealth ]
+	//static hasOne = [rutina:Rutina]
+        
 	//static belongsTo = {instructor : Instructor }
 	static hasMany = [pagos: Pagos]
 	

@@ -17,5 +17,5 @@ class Rutina {
     }
 	
 	static hasMany = [ejercicio :Ejercicio]
-	static hasOne = [member : Member]
+	static belongsTo = [member : Member]
 }

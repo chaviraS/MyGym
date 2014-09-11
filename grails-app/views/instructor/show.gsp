@@ -59,12 +59,12 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${instructorInstance?.member}">
+				<g:if test="${instructorInstance?.members}">
 				<li class="fieldcontain">
-					<span id="member-label" class="property-label"><g:message code="instructor.member.label" default="Member" /></span>
+					<span id="members-label" class="property-label"><g:message code="instructor.members.label" default="Members" /></span>
 					
-						<g:each in="${instructorInstance.member}" var="m">
-						<span class="property-value" aria-labelledby="member-label"><g:link controller="member" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
+						<g:each in="${instructorInstance.members}" var="m">
+						<span class="property-value" aria-labelledby="members-label"><g:link controller="member" action="show" id="${m.id}">${m?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
